@@ -59,6 +59,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.text-shadow-md {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 button {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -74,3 +78,13 @@ button {
 button:hover {
   background-color: var(--secondary);
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out;
+}
+

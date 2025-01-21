@@ -11,7 +11,7 @@ const Links = [
 
 const NavBar = () => {
   return (
-    <nav className="bg-black text-white py-2 fixed w-full z-10 top-0 left-0"> {/* Mantener padding vertical */}
+    <nav className="bg-black text-white py-2 fixed w-full z-20 top-0 left-0"> {/* Mantener padding vertical */}
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center relative" style={{ width: '400px', height: '120px' }}> {/* Aumentar tamaño del contenedor */}
           <Image
