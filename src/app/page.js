@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import { useState } from "react";
 import ContactUs from "@/components/ContactUs";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -55,7 +56,9 @@ export default function Home() {
           {/* Renderizar el modal si está abierto */}
           {isModalOpen && <ContactUs onClose={handleCloseModal} />}
         </div>
+        
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center relative" style={{ width: '400px', height: '120px' }}> {/* Aumentar tamaño del contenedor */}
           <Image
-            src="/BMS support tech black.png" // Ruta de la imagen en la carpeta public
+            src="/bmsLogoTrans.png" // Ruta de la imagen en la carpeta public
             alt="BMS Support Logo"
             fill // Usar fill para llenar el contenedor
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Agregar sizes

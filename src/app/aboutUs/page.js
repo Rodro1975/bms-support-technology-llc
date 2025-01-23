@@ -25,7 +25,7 @@ export default function AboutUsPage() {
             BMS is a dynamic consortium of accomplished professionals with rich and diverse backgrounds in IT services, spanning various regions including EMEA, APAC, the Middle East, and LATAM. Founded in 2024, we pride ourselves on delivering top-notch technical solutions tailored to meet the needs of our clients across different countries.
           </p>
 
-          <h2 className="text-4xl font-extrabold mt-10 text-secondary text-shadow-lg">Specializations of the Company</h2>
+          <h2 className="text-4xl font-extrabold mt-10 text-secondary text-shadow-lg">Why Choose Us</h2>
 
           <div className="mt-8 space-y-8 max-w-3xl mx-auto">
             <div className="p-6 bg-black bg-opacity-70 rounded-lg shadow-2xl hover:scale-105 transition transform duration-300">
