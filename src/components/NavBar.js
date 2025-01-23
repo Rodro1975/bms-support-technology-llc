@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image"; // Importar el componente Image
 
@@ -10,43 +11,73 @@ const Links = [
 ];
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="bg-black text-white py-2 fixed w-full z-20 top-0 left-0"> {/* Mantener padding vertical */}
+    <nav className={`bg-black text-white py-4 fixed w-full z-20 top-0 left-0 shadow-lg transition-all duration-300`}>
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center relative" style={{ width: '400px', height: '120px' }}> {/* Aumentar tamaño del contenedor */}
+        {/* Logotipo */}
+        <div className="flex items-center">
           <Image
-            src="/bmsLogoTrans.png" // Ruta de la imagen en la carpeta public
+            src="/bmsLogoTrans.png" // Cambiar a logotipo sin fondo
             alt="BMS Support Logo"
-            fill // Usar fill para llenar el contenedor
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Agregar sizes
-            priority // Asegura que esta imagen se cargue prioritariamente
-            style={{ objectFit: 'contain' }} // Mantiene la proporción del logo
+            width={150} // Ajustar tamaño según sea necesario
+            height={50}
+            className="object-contain"
           />
         </div>
-        <div className="flex space-x-4"> {/* Reducir espacio entre enlaces */}
+
+        {/* Menú hamburguesa para pantallas pequeñas */}
+        <div className="block lg:hidden">
+          <button onClick={toggleMenu} className="focus:outline-none mr-4"> {/* Añadir margen derecho */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-8 h-8 text-white"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Enlaces de navegación (solo visibles en pantallas grandes) */}
+        <div className={`hidden lg:flex lg:flex-row lg:space-x-4 transition-all duration-300`}>
           {Links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-white hover:text-green-500 transition-colors duration-300"
+              className="text-white hover:text-green-500 transition-colors duration-300 py-2 px-4 rounded"
             >
               {link.Text}
             </Link>
           ))}
         </div>
       </div>
+
+      {/* Menú desplegable para pantallas pequeñas */}
+      {isMenuOpen && (
+        <div className="lg:hidden bg-black text-white py-2">
+          {Links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="block text-center hover:text-green-500 transition-colors duration-300 py-2"
+              onClick={() => setIsMenuOpen(false)} // Cerrar menú al hacer clic
+            >
+              {link.Text}
+            </Link>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
 
 export default NavBar;
-
-
-
-
-
-
-
-
-
-
