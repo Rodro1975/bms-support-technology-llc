@@ -88,3 +88,48 @@ button:hover {
   animation: fadeIn 1.5s ease-out;
 }
 
+/* --- Estilos específicos para el componente Logo --- */
+
+.logo h1:first-child {
+  font-size: 3rem; /* Tamaño del texto para "Bms Support" */
+  color: var(--secondary);
+  text-align: right;
+}
+
+.logo h1:last-child {
+  font-size: 3rem; /* Tamaño del texto para "Technology LLC" */
+  color: var(--secondary);
+  text-align: right;
+}
+
+.logo h1 span {
+  color: var(--primary); /* Color para "LLC" */
+}
+
+.logo p {
+  font-size: 1.1rem; /* Tamaño más pequeño para el eslogan */
+  text-align: center;
+  max-width: 24rem; /* Ancho máximo para centrado */
+  margin: 0 auto; /* Centrado horizontal */
+  color: var(--foreground);
+}
+
+.modal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transform: translateY(100%); /* Oculto inicialmente */
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal.visible {
+  transform: translateY(0); /* Aparece desde abajo */
+}
+
+.modal-content {
+  padding: 1rem;
+  text-align: center;
+}

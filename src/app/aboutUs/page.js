@@ -1,5 +1,6 @@
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function AboutUsPage() {
   return (
@@ -51,6 +52,7 @@ export default function AboutUsPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

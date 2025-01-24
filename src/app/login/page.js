@@ -17,7 +17,7 @@ const Login = () => {
                 {/* Logo */}
                 <div className="flex justify-center mb-6">
                     <Image
-                        src="/BMS support tech black.png"
+                        src="/bmsLogoBlack.png"
                         alt="BMS Support Tech"
                         width={150}
                         height={150}
