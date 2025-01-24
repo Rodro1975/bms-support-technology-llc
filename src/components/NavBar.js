@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Logo from "@/components/logo";
+import Logo from "./LogoBms";
+
 
 const Links = [
   { href: "/", Text: "Home" },
