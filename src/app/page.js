@@ -4,9 +4,10 @@ import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import { useState } from "react";
 import ContactUs from "@/components/ContactUs";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 import EmployeeTab from "@/components/EmployeeTab";
+import Counters from "@/components/counters";
+import ClientCarousel from "@/components/ClientCarousel";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,12 +52,25 @@ export default function Home() {
           {/* Renderizar el modal si está abierto */}
           {isModalOpen && <ContactUs onClose={handleCloseModal} />}
         </div>
-        
       </div>
+
+      {/* Integrar el componente de contadores */}
+      <Counters />
+
+      {/* Integrar el componente de contadores */}
+      <ClientCarousel />
+
+      {/* Integrar el Tab para Empleados */}
       <EmployeeTab/>
+
+      {/* Integrar el componente Footer */}
       <Footer/>
     </div>
   );
 }
+
+
+
+
 
 
