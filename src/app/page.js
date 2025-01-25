@@ -6,6 +6,7 @@ import { useState } from "react";
 import ContactUs from "@/components/ContactUs";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import EmployeeTab from "@/components/EmployeeTab";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,19 +46,14 @@ export default function Home() {
             className="mt-6 px-6 py-3 bg-green-600 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105"
           >
             Contact Us
-          </button>          
-
-          <p className="mt-8">
-            <Link href="/login" className="text-gray-400 hover:text-secondary transition-colors duration-300 hover:underline">
-              For Employees Only
-            </Link>
-          </p>
-
+          </button>       
+         
           {/* Renderizar el modal si está abierto */}
           {isModalOpen && <ContactUs onClose={handleCloseModal} />}
         </div>
         
       </div>
+      <EmployeeTab/>
       <Footer/>
     </div>
   );

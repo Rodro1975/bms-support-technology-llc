@@ -114,6 +114,7 @@ button:hover {
   color: var(--foreground);
 }
 
+/* --- Estilos específicos para el componente ModFoot --- */
 .modal {
   position: absolute;
   bottom: 0;
