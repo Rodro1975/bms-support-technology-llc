@@ -53,7 +53,7 @@ const Footer = () => {
             <span
               className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition"
             >
-              Items List 1
+              Contact Us
             </span>
             {visibleModal === "list1" && (
               <ModFoot1
@@ -74,7 +74,7 @@ const Footer = () => {
             <span
               className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition"
             >
-              Items List 2
+              Who We Are
             </span>
             {visibleModal === "list2" && (
               <ModFoot2
@@ -95,7 +95,7 @@ const Footer = () => {
             <span
               className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition"
             >
-              Items List 3
+              Thanks
             </span>
             {visibleModal === "list3" && (
               <ModFoot3
