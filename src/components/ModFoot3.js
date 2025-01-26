@@ -12,7 +12,7 @@ const ModFoot3 = ({ isVisible, footerHeight }) => {
       style={{ height: footerHeight }}
     >
       {/* Modal Content */}
-      <div className="bg-black text-white rounded-2xl p-6 shadow-lg max-w-3xl w-full">
+      <div className="bg-black text-white rounded-2xl p-6 shadow-lg max-w-3xl w-full mt-8">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-secondary mb-4">Thank You!</h2>
           <p className="text-gray-300 mb-6">

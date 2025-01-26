@@ -13,7 +13,7 @@ const ModFoot2 = ({ isVisible, footerHeight }) => {
       style={{ height: footerHeight }}
     >
       {/* Modal Content */}
-      <div className="bg-black text-white rounded-2xl p-6 shadow-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto mt-6">
+      <div className="bg-black text-white rounded-2xl p-6 shadow-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto mt-8">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-secondary mb-4">Who We Are</h2>
           <p className="text-primary mb-4">
@@ -29,7 +29,7 @@ const ModFoot2 = ({ isVisible, footerHeight }) => {
           <h3 className="text-xl font-semibold text-secondary mb-4">Why Choose Us</h3>
 
           {/* Why Choose Us Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm leading-relaxed mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm leading-relaxed mb-4">
             <p>
               <strong className="text-white">Well-Organized IT Assistance:</strong> Enhancing efficiency and
               streamlining operations, we specialize in providing meticulously managed IT support aimed
