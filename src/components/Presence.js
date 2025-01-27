@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const OurPresence = () => {
   return (
-    <section className="bg-black py-10">
+    <section className="bg-black min-h-[90vh] py-10 mb-10">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center">
           <h2 className="text-2xl text-primary mb-5">Our Presence</h2>

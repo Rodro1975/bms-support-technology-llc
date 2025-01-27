@@ -14,11 +14,11 @@ const ClientCarousel = () => {
   ];
 
   return (
-    <section className="bg-black py-8">
+    <section className="bg-black h-[30vh] py-10">
       <h2 className="text-center text-secondary text-2xl font-bold mb-6">
         Our Clients
       </h2>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden ">
         <motion.div
           className="flex gap-6"
           initial={{ x: "100%" }}

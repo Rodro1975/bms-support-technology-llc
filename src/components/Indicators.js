@@ -36,8 +36,14 @@ const Indicators = () => {
     ],
   };
 
+  // Opciones de las gráficas
+  const chartOptions = {
+    responsive: false, // Desactiva el redimensionamiento automático
+    maintainAspectRatio: false, // Permite personalizar altura/ancho
+  };
+
   return (
-    <section className="bg-black p-8 text-center">
+    <section className="bg-black p-8 text-center min-h-[90vh] py-10 mb-10">
       <div>
         <h2 className="text-3xl font-bold mb-6 text-primary">Indicators of Success</h2>
         <p className="text-foreground mb-12 max-w-2xl mx-auto">
@@ -48,15 +54,19 @@ const Indicators = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Gráfica de Barras */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-lg font-semibold mb-4 text-gray-700">Client Satisfaction</h3>
-          <Bar data={barData} options={{ responsive: true, maintainAspectRatio: true }} />
+        <div className="bg-white p-6 rounded-lg shadow-md flex justify-center items-center">
+          <div className="chart-container w-[300px] h-[300px]">
+            <h3 className="text-lg font-semibold mb-4 text-gray-700">Client Satisfaction</h3>
+            <Bar data={barData} options={chartOptions} />
+          </div>
         </div>
 
         {/* Gráfica de Pastel */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-lg font-semibold mb-4 text-gray-700">Project Delivery</h3>
-          <Pie data={pieData} options={{ responsive: true, maintainAspectRatio: true }} />
+        <div className="bg-white p-6 rounded-lg shadow-md flex justify-center items-center">
+          <div className="chart-container w-[300px] h-[300px]">
+            <h3 className="text-lg font-semibold mb-4 text-gray-700">Project Delivery</h3>
+            <Pie data={pieData} options={chartOptions} />
+          </div>
         </div>
       </div>
     </section>
@@ -64,3 +74,4 @@ const Indicators = () => {
 };
 
 export default Indicators;
+

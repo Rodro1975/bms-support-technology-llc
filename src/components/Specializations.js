@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Specializations = () => {
   return (
-    <section className="bg-black text-white flex flex-col lg:flex-row items-center justify-center h-screen p-8">
+    <section className="bg-black text-white flex flex-col lg:flex-row items-center justify-center h-[90vh] p-8">
       {/* Imagen a la izquierda */}
       <div className="flex-1 w-full flex justify-center mb-6 lg:mb-0">
         <Image

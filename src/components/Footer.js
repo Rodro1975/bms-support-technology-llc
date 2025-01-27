@@ -24,7 +24,7 @@ const Footer = () => {
     <>
       {/* Footer principal */}
       <footer
-        className="relative h-screen bg-fixed bg-cover bg-center"
+        className="relative h-screen bg-fixed bg-cover bg-center h-[60vh]"
         style={{ backgroundImage: "url('/footer.jpg')" }}
       >
         {/* Overlay */}

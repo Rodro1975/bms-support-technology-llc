@@ -11,8 +11,8 @@ const ModFoot3 = ({ isVisible, footerHeight }) => {
       } transition-opacity duration-300`}
       style={{ height: footerHeight }}
     >
-      {/* Modal Content */}
-      <div className="bg-black text-white rounded-2xl p-6 shadow-lg max-w-3xl w-full mt-8">
+      {/* Contenedor del modal */}
+      <div className="bg-black text-white rounded-2xl p-6 shadow-lg max-w-3xl w-full max-h-[60vh] overflow-y-auto relative">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-secondary mb-4">Thank You!</h2>
           <p className="text-gray-300 mb-6">
@@ -35,7 +35,7 @@ const ModFoot3 = ({ isVisible, footerHeight }) => {
               Contact Us
             </a>.
           </p>
-          {/* Logo at the end */}
+          {/* Logo al final */}
           <div className="flex justify-center mt-4">
             <Image src="/bmsLogoBlack.png" alt="BMS Logo" width={150} height={50} />
           </div>
@@ -46,5 +46,7 @@ const ModFoot3 = ({ isVisible, footerHeight }) => {
 };
 
 export default ModFoot3;
+
+
 
 
