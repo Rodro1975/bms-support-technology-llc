@@ -16,7 +16,7 @@ const ClientCarousel = () => {
   return (
     <section className="bg-gray-900 py-8">
       <h2 className="text-center text-secondary text-2xl font-bold mb-6">
-        Nuestros Clientes
+        Our Clients
       </h2>
       <div className="overflow-hidden">
         <motion.div

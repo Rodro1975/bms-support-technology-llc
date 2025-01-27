@@ -19,7 +19,7 @@ const ModFoot2 = ({ isVisible, footerHeight }) => {
           <p className="text-primary mb-4">
             About BMS SUPPORT TECHNOLOGY
           </p>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-300 mb-4">
             BMS is a dynamic consortium of accomplished professionals with rich and diverse
             backgrounds in IT services, spanning various regions including EMEA, APAC, the Middle East,
             and LATAM. Founded in 2024, we pride ourselves on delivering top-notch technical solutions
@@ -48,7 +48,7 @@ const ModFoot2 = ({ isVisible, footerHeight }) => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex justify-center gap-6 mb-6">
+          <div className="flex justify-center gap-6 mb-4">
             <Link href="/" className="text-primary underline">
               Home
             </Link>
