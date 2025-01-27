@@ -8,6 +8,9 @@ import Footer from "@/components/Footer";
 import EmployeeTab from "@/components/EmployeeTab";
 import Counters from "@/components/counters";
 import ClientCarousel from "@/components/ClientCarousel";
+import Specializations from "@/components/Specializations";
+import Indicators from "@/components/Indicators";
+import OurPresence from "@/components/Presence";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,6 +59,15 @@ export default function Home() {
 
       {/* Integrar el componente de contadores */}
       <Counters />
+
+      {/* Integrar el componente de especializacion */}
+      <Specializations />
+
+      {/* Integrar el componente de nuestra presencia */}
+      <OurPresence/>
+
+      {/* Integrar el componente de indicadores */}
+      <Indicators />
 
       {/* Integrar el componente de contadores */}
       <ClientCarousel />

@@ -15,7 +15,7 @@ const ModFoot2 = ({ isVisible, footerHeight }) => {
       {/* Modal Content */}
       <div className="bg-black text-white rounded-2xl p-6 shadow-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto mt-8">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-secondary mb-4">Who We Are</h2>
+          <h2 className="text-2xl font-bold text-secondary mb-2">Who We Are</h2>
           <p className="text-primary mb-4">
             About BMS SUPPORT TECHNOLOGY
           </p>

@@ -14,7 +14,7 @@ const ClientCarousel = () => {
   ];
 
   return (
-    <section className="bg-gray-900 py-8">
+    <section className="bg-black py-8">
       <h2 className="text-center text-secondary text-2xl font-bold mb-6">
         Our Clients
       </h2>
