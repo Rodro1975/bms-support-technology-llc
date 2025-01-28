@@ -5,6 +5,11 @@ import Footer from "@/components/Footer";
 import EmployeeTab from "@/components/EmployeeTab";
 import Image from "next/image";
 import TopFour from "@/components/TopFour";
+import DigitalProcess from "@/components/DigitalProcess";
+import DigitalBussiness from "@/components/DigitalBussines";
+import ProcurementSolution from "@/components/Procurement";
+import EquipmentServices from "@/components/EquipmentServices";
+import Industries from "@/components/Industries";
 
 export default function InformationPage() {
   const services = [
@@ -62,6 +67,21 @@ export default function InformationPage() {
 
       {/* Integra aqui la seccion top four */}
       <TopFour/>
+
+      {/* Integra aqui la seccion Digital Process */}
+      <DigitalProcess/>
+
+      {/* Integra aqui la seccion Digital Bussiness */}
+      <DigitalBussiness/>
+
+      {/* Integra aqui la seccion Procurement */}
+      <ProcurementSolution/>
+
+      {/* Integra aqui la seccion Equipment Services */}
+      <EquipmentServices/>
+
+      {/* Integra aqui la seccion Industries */}
+      <Industries/>
 
       <EmployeeTab />
 
