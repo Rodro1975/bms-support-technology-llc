@@ -63,7 +63,7 @@ const ModFoot1 = ({ isVisible, footerHeight }) => {
             >
               <div className="w-16 h-16 bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 rounded-full p-2 shadow-lg">
                 <Image
-                  src="/uk.png"
+                  src="/england.png"
                   alt="UK Flag"
                   width={100}
                   height={100}

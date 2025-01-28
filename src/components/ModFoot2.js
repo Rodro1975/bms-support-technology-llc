@@ -45,7 +45,7 @@ const ModFoot2 = ({ isVisible }) => {
                 Network Support for Data Centers:
               </strong>{" "}
               Our proficient support squad stands ready 24/7, accessible via
-              Skype and online calls, and prepared to visit clients' sites to
+              Skype and online calls, and prepared to visit clients sites to
               swiftly resolve any IT-related issues in the field.
             </p>
             <p>

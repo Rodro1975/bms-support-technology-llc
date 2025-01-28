@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link"; // Importa Link de Next.js
 
 const Login = () => {
     const handleSubmit = (e) => {
@@ -14,16 +15,18 @@ const Login = () => {
             style={{ backdropFilter: "blur(4px)" }} // Desenfoque opcional
         >
             <div className="bg-black dark:bg-gray-900 p-6 rounded-lg max-w-sm w-full mx-4">
-                {/* Logo */}
+                {/* Logo como enlace */}
                 <div className="flex justify-center mb-6">
-                    <Image
-                        src="/bmsLogoBlack.png"
-                        alt="BMS Support Tech"
-                        width={150}
-                        height={150}
-                        priority
-                        className="rounded-lg"
-                    />
+                    <Link href="/"> {/* Enlace al home */}
+                        <Image
+                            src="/bmsLogoBlack.png"
+                            alt="BMS Support Tech"
+                            width={150}
+                            height={150}
+                            priority
+                            className="rounded-lg cursor-pointer" // Añadido cursor pointer para indicar que es un enlace
+                        />
+                    </Link>
                 </div>
 
                 {/* Título */}
@@ -77,7 +80,7 @@ const Login = () => {
 
                 {/* Enlace de registro */}
                 <p className="mt-4 text-sm text-center text-var(--foreground)">
-                By clicking login, you agree to all our privacy policies{" "}                   
+                    By clicking login, you agree to all our privacy policies{" "}
                 </p>
             </div>
         </div>
@@ -85,3 +88,5 @@ const Login = () => {
 };
 
 export default Login;
+
+
