@@ -136,4 +136,53 @@ button:hover {
   text-align: center;
 }
 
+/*animacion de los aros en informacion*/
+/* Animación de giro */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+/* Brillo intermitente */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 194, 7, 0.6), 0 0 30px rgba(0, 194, 7, 0.4), 0 0 60px rgba(0, 194, 7, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 194, 7, 0.8), 0 0 50px rgba(0, 194, 7, 0.6), 0 0 80px rgba(0, 194, 7, 0.4);
+  }
+}
+
+/* Estilo para los aros */
+.glowing-ring {
+  width: 120px;
+  height: 120px;
+  border: 4px solid transparent;
+  border-top: 4px solid var(--primary);
+  border-radius: 50%;
+  animation: spin 2s linear infinite, glow 1.5s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Tarjeta transparente con fondo distinguible */
+.transparent-card {
+  background: rgba(255, 255, 255, 0.1); /* Transparente pero visible */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde tenue */
+  border-radius: 1rem; /* Bordes redondeados */
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.transparent-card:hover {
+  transform: scale(1.05); /* Aumenta de tamaño al pasar el mouse */
+  background: rgba(255, 255, 255, 0.2); /* Hace más visible el fondo */
+}
