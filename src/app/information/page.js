@@ -4,12 +4,13 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import EmployeeTab from "@/components/EmployeeTab";
 import Image from "next/image";
-import TopFour from "@/components/TopFour";
+import TopFive from "@/components/TopFive";
 import DigitalProcess from "@/components/DigitalProcess";
 import DigitalBussiness from "@/components/DigitalBussines";
 import ProcurementSolution from "@/components/Procurement";
 import EquipmentServices from "@/components/EquipmentServices";
 import Industries from "@/components/Industries";
+import Coverage from "@/components/coverage";
 
 export default function InformationPage() {
   const services = [
@@ -66,7 +67,7 @@ export default function InformationPage() {
       </header>
 
       {/* Integra aqui la seccion top four */}
-      <TopFour/>
+      <TopFive/>
 
       {/* Integra aqui la seccion Digital Process */}
       <DigitalProcess/>
@@ -76,6 +77,9 @@ export default function InformationPage() {
 
       {/* Integra aqui la seccion Procurement */}
       <ProcurementSolution/>
+
+      {/* Integra aqui la seccion Procurement */}
+      <Coverage/>
 
       {/* Integra aqui la seccion Equipment Services */}
       <EquipmentServices/>

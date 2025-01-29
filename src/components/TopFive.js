@@ -3,6 +3,11 @@
 const TopFour = () => {
   const services = [
     {
+      title: "Well Managed IT Services",
+      description:
+        "BMS SUPPORT is your one-stop solution for all IT needs. From network support and data center management to IT procurement and global ICT support.",
+    },
+    {
       title: "Web Apps Development",
       description:
         "Creation of secure and functional web applications tailored to the specific needs of clients.",
@@ -29,7 +34,7 @@ const TopFour = () => {
       className="min-h-[90vh] flex flex-col items-center justify-center px-6 py-12 bg-black"
       id="top-four"
     >
-      <h2 className="text-4xl font-bold text-primary mb-8">Top 4our</h2>
+      <h2 className="text-4xl font-bold text-primary mb-8">Top 5ive</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <div key={index} className="transparent-card">

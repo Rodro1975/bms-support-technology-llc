@@ -41,16 +41,16 @@ const Outsoursing = () => {
           you with access to a team of experienced professionals who can handle
           your IT needs efficiently and effectively.
         </p>
-        <h3 className="text-3xl font-semibold mt-6">
+        <h2 className="text-3xl text-primary font-semibold mt-6">
           Comprehensive IT Outsourcing Solutions
-        </h3>
+        </h2>
         <p className="mt-4">
           Our services are designed to offer flexible, scalable solutions that
           meet the unique needs of your business.
         </p>
-        <h3 className="text-3xl font-semibold mt-6">
+        <h2 className="text-3xl text-primary font-semibold mt-6">
           Key Features of Our IT Outsourcing Services
-        </h3>
+        </h2>
         <ul className="list-disc list-inside mt-4 space-y-2">
           <li>Dedicated IT Support: 24/7 assistance.</li>
           <li>Cost Efficiency: Reduce operational costs.</li>
