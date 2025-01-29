@@ -11,6 +11,7 @@ import ClientCarousel from "@/components/ClientCarousel";
 import Specializations from "@/components/Specializations";
 import Indicators from "@/components/Indicators";
 import OurPresence from "@/components/Presence";
+import Outsoursing from "@/components/Outsoursing";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,11 +61,14 @@ export default function Home() {
       {/* Integrar el componente de contadores */}
       <Counters />
 
-      {/* Integrar el componente de especializacion */}
-      <Specializations />
+      {/* Integrar el componente de Outsourcing */}
+      <Outsoursing/>
 
       {/* Integrar el componente de nuestra presencia */}
       <OurPresence/>
+
+      {/* Integrar el componente de especializacion */}
+      <Specializations />      
 
       {/* Integrar el componente de indicadores */}
       <Indicators />
