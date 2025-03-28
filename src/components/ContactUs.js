@@ -40,10 +40,10 @@ const ContactUs = ({ onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 overflow-auto pt-16"
       style={{ backdropFilter: "blur(4px)" }}
     >
-      <section className="bg-transparent dark:bg-gray-900 p-6 rounded-lg max-w-screen-md w-full mx-4">
+      <section className="bg-transparent dark:bg-gray-900 p-6 rounded-lg max-w-screen-md w-full mx-4 my-16">
         <div className="py-8 lg:py-16 px-4 mx-auto">
           <h2 className="text-2xl font-bold text-center text-var(--primary)">
             Contact Us
