@@ -1,18 +1,18 @@
 "use client";
 
-import  { useState } from "react";
+import { useState } from "react";
 import ContactUs from "./ContactUs";
 
 const Headquarters = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    
-      const handleContactClick = () => {
-        setIsModalOpen(true);
-      };
-    
-      const handleCloseModal = () => {
-        setIsModalOpen(false);
-      };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleContactClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <section className="bg-black text-white p-8">
       <h2 className="text-4xl font-bold text-center mb-6">Our Headquarters</h2>
@@ -34,27 +34,20 @@ const Headquarters = () => {
         ></iframe>
       </div>
 
-        {/* Contact Us */}
-        <div className="flex justify-center mb-6">            
-        <button 
-            onClick={handleContactClick} 
-            className="mt-6 px-6 py-3 bg-green-600 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105"
-          >
-            Contact Us
-        </button> 
+      {/* Contact Us */}
+      <div className="flex justify-center mb-6">
+        <button
+          onClick={handleContactClick}
+          className="mt-6 px-6 py-3 bg-green-600 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105"
+        >
+          Let&apos;s talk
+        </button>
 
         {/* Renderizar el modal si está abierto */}
         {isModalOpen && <ContactUs onClose={handleCloseModal} />}
-        </div>      
-
+      </div>
     </section>
   );
 };
 
 export default Headquarters;
-
-
-
-
-
-

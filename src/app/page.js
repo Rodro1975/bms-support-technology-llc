@@ -33,26 +33,28 @@ export default function Home() {
             src="/heroBms.jpg"
             alt="Imagen de soporte BMS"
             fill
-            style={{ objectFit: "cover" }} 
+            style={{ objectFit: "cover" }}
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-60"></div>
         </div>
         <div className="relative z-10 max-w-lg text-center text-white p-8">
           <h1 className="text-7xl font-bold text-primary text-shadow-md relative">
-            BMS Support Technology 
+            BMS Support Technology
             <span className="text-gray-400"> LLC</span>
             <span className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-40 rounded-lg"></span>
           </h1>
-          <p className="mt-4 text-lg text-foreground">We Transform Ideas Into Digital Innovation.</p>
-          
-          <button 
-            onClick={handleContactClick} 
+          <p className="mt-4 text-lg text-foreground">
+            We Transform Ideas Into Digital Innovation.
+          </p>
+
+          <button
+            onClick={handleContactClick}
             className="mt-6 px-6 py-3 bg-green-600 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105"
           >
-            Contact Us
-          </button>       
-         
+            Let&apos;s Talk
+          </button>
+
           {/* Renderizar el modal si está abierto */}
           {isModalOpen && <ContactUs onClose={handleCloseModal} />}
         </div>
@@ -62,13 +64,13 @@ export default function Home() {
       <Counters />
 
       {/* Integrar el componente de Outsourcing */}
-      <Outsoursing/>
+      <Outsoursing />
 
       {/* Integrar el componente de nuestra presencia */}
-      <OurPresence/>
+      <OurPresence />
 
       {/* Integrar el componente de especializacion */}
-      <Specializations />      
+      <Specializations />
 
       {/* Integrar el componente de indicadores */}
       <Indicators />
@@ -77,16 +79,10 @@ export default function Home() {
       <ClientCarousel />
 
       {/* Integrar el Tab para Empleados */}
-      <EmployeeTab/>
+      <EmployeeTab />
 
       {/* Integrar el componente Footer */}
-      <Footer/>
+      <Footer />
     </div>
   );
 }
-
-
-
-
-
-

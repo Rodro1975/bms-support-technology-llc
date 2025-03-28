@@ -67,7 +67,7 @@ const Outsoursing = () => {
           onClick={handleContactClick}
           className="mt-6 px-6 py-3 bg-green-600 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105"
         >
-          Contact Us
+          Let&apos;s Talk
         </button>
       </div>
 
