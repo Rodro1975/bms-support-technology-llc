@@ -50,9 +50,7 @@ const Footer = () => {
             onMouseLeave={() => closeModal("list1")}
           >
             {/* Items List 1 */}
-            <span
-              className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition"
-            >
+            <span className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition">
               Contact Us
             </span>
             {visibleModal === "list1" && (
@@ -71,9 +69,7 @@ const Footer = () => {
             onMouseLeave={() => closeModal("list2")}
           >
             {/* Items List 2 */}
-            <span
-              className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition"
-            >
+            <span className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition">
               Who We Are
             </span>
             {visibleModal === "list2" && (
@@ -92,9 +88,7 @@ const Footer = () => {
             onMouseLeave={() => closeModal("list3")}
           >
             {/* Items List 3 */}
-            <span
-              className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition"
-            >
+            <span className="font-bold text-lg cursor-pointer text-center lg:text-left text-foreground hover:text-primary transition">
               Thanks
             </span>
             {visibleModal === "list3" && (
@@ -112,7 +106,7 @@ const Footer = () => {
       {/* Social Media */}
       <div className="flex flex-col items-center justify-center text-center text-foreground p-4 bg-black bg-opacity-70">
         <a
-          href="https://www.linkedin.com/in/tu-perfil/"
+          href="https://www.linkedin.com/in/bms-support-tecnollogy-llc-069a74358/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground text-3xl hover:text-primary transition"
@@ -124,24 +118,12 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="text-center text-foreground p-4 bg-black bg-opacity-50">
-        <p>© Design by Rodrigo Iván Ordoñez Chávez || All Rights Reserved 2025</p>
+        <p>
+          © Design by Rodrigo Iván Ordoñez Chávez || All Rights Reserved 2025
+        </p>
       </div>
     </>
   );
 };
 
 export default Footer;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
